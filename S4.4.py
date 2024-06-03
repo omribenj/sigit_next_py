@@ -39,7 +39,7 @@ def gen_years(start=2019):
     :type start: int
     """
     year = start
-    while 1 == 1:
+    while True:
         yield year
         year += 1
 
@@ -88,7 +88,7 @@ def main():
     date_gen = gen_date()
     count = 0
     # endless loop
-    while 1 == 1:     
+    while True:     
         if count % 1000000 == 0:
             print(next(date_gen))
         else:
